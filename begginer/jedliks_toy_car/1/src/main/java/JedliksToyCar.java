@@ -5,15 +5,12 @@ public class JedliksToyCar {
 
     public static JedliksToyCar buy() {
 
-        JedliksToyCar car = new JedliksToyCar();
-
-        return car;
+        return new JedliksToyCar();
     }
 
     public String distanceDisplay() {
 
         return "Driven " + distanceDriven + " meters";
-
     }
 
     public String batteryDisplay() {
@@ -23,7 +20,6 @@ public class JedliksToyCar {
 
         else
             return "Battery at " + battery + "%";
-
     }
 
     public void drive() {
@@ -32,6 +28,5 @@ public class JedliksToyCar {
             distanceDriven += 20;
             battery -= 1;
         }
-
     }
 }
