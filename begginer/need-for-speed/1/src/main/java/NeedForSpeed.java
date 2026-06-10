@@ -49,8 +49,6 @@ class RaceTrack {
 
     public boolean canFinishRace(NeedForSpeed car) {
 
-        int maxDistance = (100 / car.batteryDrain) * car.speed;
-
-        return maxDistance >= distance;
+        return (100 / car.batteryDrain) * car.speed >= distance;
     }
 }
